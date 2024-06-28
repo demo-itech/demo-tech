@@ -1,0 +1,16 @@
+{
+    "name": "data-generator",
+    "version": "1.0.0",
+    "description": "A simple data generation script",
+    "main": "generate_data.js",
+    "scripts": {
+      "generate": "node generate_data.js"
+    },
+    "dependencies": {
+      "faker": "^5.5.3"
+    },
+    "devDependencies": {},
+    "author": "",
+    "license": "ISC"
+  }
+  

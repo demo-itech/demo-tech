@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+  - "12"  # Specify the Node.js version you need
+
+# Cache node_modules to speed up builds
+cache:
+  directories:
+    - node_modules
+
+# Install dependencies
+install:
+  - npm install
+
+# Run the data generation script
+script:
+  - npm run generate
+
+# Optionally, you can specify branches to build
+branches:
+  only:
+    - main  # Replace with your main branch
+
+# Notifications (optional)
+notifications:
+  email:
+    recipients:
+      - your-email@example.com
+    on_success: never
+    on_failure: always
