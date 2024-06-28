@@ -19,11 +19,3 @@ script:
 branches:
   only:
     - main  # Replace with your main branch
-
-# Notifications (optional)
-notifications:
-  email:
-    recipients:
-      - your-email@example.com
-    on_success: never
-    on_failure: always
